@@ -1,1 +1,1 @@
-"""docstring in public package"""
+# docstring
