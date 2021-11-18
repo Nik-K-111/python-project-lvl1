@@ -1,9 +1,11 @@
-# Makefile с командой install, выполняющей poetry install
-insnstall:
+install:
 	poetry insnall
 
 brain-games:
 	poetry run brain-games
+
+brain-even:
+	poetry run brain-even
 
 build:
 	poetry build
