@@ -1,11 +1,13 @@
 #! usr/bin/env python3
 
+
 import prompt
 import random
 
-def parity_check():    
+
+def parity_check():
     name = prompt.string('May I have your name? ')
-    print(f"Hello, {name}!")
+    print(f'Hello, {name}!')
     print('Answer "yes" if the number is even, otherwise answer "no"')
 
     i = 3
