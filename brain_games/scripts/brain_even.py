@@ -1,6 +1,6 @@
 #! usr/bin/env python3
 
-from BRAIN_GAMES.parity_check import parity_check
+from brain_games.parity_check import parity_check
 
 
 def brain_even():
