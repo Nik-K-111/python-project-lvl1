@@ -1,47 +1,31 @@
 #! usr/bin/env python3
 
-
 import prompt
 import random
-
+from brain_games.offer import acquaintance
+from brain_games.checking import checking
 
 def parity_check():
-    print(f'Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(
-        f'Hello, {name}!\n'
-        f'Answer "yes" if the number is even, otherwise answer "no"'
-        )
+    regulations = 'Answer "yes" if the number is even, otherwise answer "no"'
+    name = acquaintance(regulations)
 
+    # Определение значений, запуск цикла задач.
+    a_min, a_max = 11, 99
+    final = ''
     i = 3
     while i > 0:
-        i = i - 1
-        proposed_number = random.randint(11, 99)
-
-        if proposed_number & 1 == 1:
+        i -= 1
+        a = random.randint(a_min, a_max)
+        if a & 1 == 1:
             correct_answer = 'no'
         else:
             correct_answer = 'yes'
 
-        print('Question: {}'.format(proposed_number))
+        print(f'Question: {a}')
         user_answer = prompt.string('Your answer: ')
-        
-        if user_answer == correct_answer:
-            result = True
-            print('Correct!')
+        final, i = checking(i, user_answer, correct_answer, name)
 
-        else:
-            result = False
-            print(
-                f"'{user_answer}' is wrong answer ;(. "
-                f"Correct answer was '{correct_answer}'.\n"
-                f"Let's try again, {name}!"
-            )
-
-            i = 0
-
-    if result == True:
-        print(f"Congratulations, {name}!")
+    print(final)
 
 
 def main():

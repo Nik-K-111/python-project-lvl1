@@ -1,3 +1,4 @@
-dist
-.venv
-pycach
+.venv/
+temp/
+temp.py
+*.log
