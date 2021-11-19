@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Nik-K-111 <nik.korenga.111@gmail.com>"]
 packages = [
-   {include = "BRAIN_GAMES"},
+   {include = "brain_games"},
 ]
 
 [tool.poetry.dependencies]
@@ -15,8 +15,8 @@ prompt = "^0.4.1"
 wemake-python-styleguide = "^0.15.3"
 
 [tool.poetry.scripts]
-brain-games = "BRAIN_GAMES.scripts.brain_games:main"
-brain-even = "BRAIN_GAMES.scripts.brain_even:main"
+brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
