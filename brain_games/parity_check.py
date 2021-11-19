@@ -7,8 +7,10 @@ import random
 
 def parity_check():
     name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('Answer "yes" if the number is even, otherwise answer "no"')
+    print(
+        f'Hello, {name}!\n'
+        f'Answer "yes" if the number is even, otherwise answer "no"'
+        )
 
     i = 3
     while i > 0:
