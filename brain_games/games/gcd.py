@@ -10,7 +10,7 @@ from brain_games.offer import acquaintance
 def search_gcd():
     regulations = 'Find the greatest common divisor of given numbers.'
     name = acquaintance(regulations)
-    
+
     list_1 = [1, 2, 3, 5, 7, 11]
     list_2 = [2, 3, 4, 6, 7, 8, 9, 12, 13, 14, 16, 17, 18, 19]
     base_gcd = (random.sample(list_2, 3))
