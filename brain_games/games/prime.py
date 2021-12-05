@@ -12,8 +12,7 @@ def define_prime():
         'Answer "yes" if given number is prime. Otherwise answer "no".'
         )
     name = acquaintance(regulations)
-    final = ''
-    
+        
     def is_prime(a):
         if a & 1 == 0:
             return False
