@@ -10,7 +10,7 @@ from brain_games.checking import checking
 def define_prime():
     regulations = (
         'Answer "yes" if given number is prime. Otherwise answer "no".'
-        )
+    )
     name = acquaintance(regulations)
 
     def is_prime(a):
