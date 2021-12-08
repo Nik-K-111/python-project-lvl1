@@ -5,7 +5,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/Nik-K-111/python-project-lvl1/test_coverage)
 
 # ![Brain Games](https://github.com/Nik-K-111/python-project-lvl1/blob/main/brain_games/image/img_brain_games.png?raw=true "На что способен ТВОЙ BRAIN ?")
-<h1 style="color:#00FFFF">Brain Games</h1>
+# Brain Games
 
 ##### Hexlet-Code
 
@@ -18,14 +18,23 @@
 
 ## Следуй по этому пути и познай свой __BRAIN !__
 
-<h2 style="color:#AFEEEE">Brain Even</h2>
+### ✎ Brain Even
 
-[![asciicast](https://asciinema.org/a/454584.svg)](https://asciinema.org/a/454584)
+[![asciicast](https://asciinema.org/a/1ft0eGpcH51Li35VNHRMvBNxY.svg)](https://asciinema.org/a/1ft0eGpcH51Li35VNHRMvBNxY)
 
-<h2 style="color:#AFEEEE">Brain Calc</h2>
+### ✎ Brain Calc
 
-<h2 style="color:#AFEEEE">Brain GSD</h2>
+[![asciicast](https://asciinema.org/a/VQrZ2wjabVKlcsGuxPX9biyfE.svg)](https://asciinema.org/a/VQrZ2wjabVKlcsGuxPX9biyfE)
 
-<h2 style="color:#AFEEEE">Brain Progression</h2>
+### ✎ Brain GSD
 
-<h2 style="color:#AFEEEE">Brain Prime</h2>
+[![asciicast](https://asciinema.org/a/aRthEHEzKeCX4GcNeDHdHUh9A.svg)](https://asciinema.org/a/aRthEHEzKeCX4GcNeDHdHUh9A)
+
+### ✎ Brain Progression
+
+[![asciicast](https://asciinema.org/a/rn67BJpiyurjTjk4jQGLKEaNh.svg)](https://asciinema.org/a/rn67BJpiyurjTjk4jQGLKEaNh)
+
+### ✎ Brain Prime
+
+[![asciicast](https://asciinema.org/a/uFgXFaSpo6sGeQMGU7gt2zSoX.svg)](https://asciinema.org/a/uFgXFaSpo6sGeQMGU7gt2zSoX)
+
