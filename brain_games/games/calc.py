@@ -13,7 +13,6 @@ def slack_calc():
 
     a_min, a_max = 3, 99
     b_min, b_max = 3, 99
-    final = ''
     i = 3
     while i > 0:
         i -= 1
@@ -28,7 +27,7 @@ def slack_calc():
             correct_answer = a * b
 
         print(f'Question: {a} {sign} {b}')
-        user_answer = prompt.integer('Your answer: ')
+        user_answer = prompt.string('Your answer: ')
         final, i = checking(i, user_answer, correct_answer, name)
 
     print(final)

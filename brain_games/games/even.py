@@ -11,7 +11,6 @@ def parity_check():
     name = acquaintance(regulations)
 
     a_min, a_max = 11, 99
-    final = ''
     i = 3
     while i > 0:
         i -= 1
