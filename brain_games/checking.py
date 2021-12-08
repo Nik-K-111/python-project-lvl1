@@ -2,7 +2,7 @@
 
 
 def checking(i, user_answer, correct_answer, name):
-    if user_answer == correct_answer:
+    if str(user_answer) == str(correct_answer):
         print('Correct!')
         final = (f"Congratulations, {name}!")
     else:
