@@ -1,7 +1,7 @@
 #! usr/bin/env python3
 
 from brain_games.engine import run_game
-from brain_games.games.even import REGULATIONS, ROUNDS, current_game
+from brain_games.games.gcd import REGULATIONS, ROUNDS, current_game
 
 
 def brain_gcd():

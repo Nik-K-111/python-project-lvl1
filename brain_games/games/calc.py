@@ -2,8 +2,8 @@
 
 import random
 
-# REGULATIONS = 'What is the result of the expression?'
-# ROUNDS = 3
+REGULATIONS = 'What is the result of the expression?'
+ROUNDS = 3
 
 
 def current_game():
