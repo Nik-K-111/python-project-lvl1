@@ -1,11 +1,11 @@
 #! usr/bin/env python3
 
-
-from brain_games.games.gcd import search_gcd
+from brain_games.engine import run_game
+from brain_games.games.even import REGULATIONS, ROUNDS, current_game
 
 
 def brain_gcd():
-    search_gcd()
+    run_game(REGULATIONS, ROUNDS, current_game)
 
 
 def main():

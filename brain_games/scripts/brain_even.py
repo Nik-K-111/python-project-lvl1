@@ -1,11 +1,11 @@
 #! usr/bin/env python3
 
-
-from brain_games.games.even import parity_check
+from brain_games.engine import run_game
+from brain_games.games.even import REGULATIONS, ROUNDS, current_game
 
 
 def brain_even():
-    parity_check()
+    run_game(REGULATIONS, ROUNDS, current_game)
 
 
 def main():
