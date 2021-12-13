@@ -19,8 +19,8 @@ def current_game():
     question = random.randint(MIN_VALUE, MAX_VALUE)
 
     if is_even(question):
-        correct_answer = 'no'
-    else:
         correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
 
     return question, correct_answer
