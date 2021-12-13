@@ -23,5 +23,5 @@ def current_game():
     else:
         correct_answer = 'no'
     question = a
-    
+
     return question, correct_answer
