@@ -7,18 +7,18 @@ ROUNDS = 3
 
 def current_game():
     progression_string = ''
-    list_n = [2, 3, 4, 6, 7, 8, 9, 12, 13, 14, 16, 17, 18, 19]
-    [a] = random.sample(list_n, 1)
-    d = random.randint(3, 9)
+    list_1_term = [2, 3, 4, 6, 7, 8, 9, 12, 13, 14, 16, 17, 18, 19]
+    [term] = random.sample(list_1_term, 1)
+    difference = random.randint(3, 9)
     n = random.randint(1, 10)
     j = 10
     while j > 0:
         if j != n:
-            progression_string = progression_string + str(a) + ' '
+            progression_string = progression_string + str(term) + ' '
         else:
-            correct_answer = a
+            correct_answer = term
             progression_string = progression_string + '.. '
-        a = a + d
+        term = term + difference
         j -= 1
     question = (f'{progression_string}')
     
