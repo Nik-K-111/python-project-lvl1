@@ -2,7 +2,7 @@
 
 [![Actions Status](https://github.com/Nik-K-111/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Nik-K-111/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/Nik-K-111/python-project-lvl1/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/Nik-K-111/python-project-lvl1/test_coverage)
+[![Python CI](https://github.com/paskag/python-project-lvl1/workflows/Python%20CI/badge.svg)](https://github.com/Nik-K-111/python-project-lvl1/actions)
 
 # ![Brain Games](https://github.com/Nik-K-111/python-project-lvl1/blob/main/brain_games/image/img_brain_games.png?raw=true "На что способен ТВОЙ BRAIN ?")
 # Brain Games
