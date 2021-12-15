@@ -8,14 +8,14 @@ ROUNDS = 3
 
 
 def current_game():
+    MIN_VALUE_GCD, MAX_VALUE_GCD = 2, 15
+    LIST_QUOTIENT = [2, 3, 5, 7, 11, 13, 17, 19]
 
-    list_1 = [1, 2, 3, 5, 7, 11]
-    list_2 = [2, 3, 4, 6, 7, 8, 9, 12, 13, 14, 16, 17, 18, 19]
-    [base_gcd] = (random.sample(list_2, 1))
-    [a1, b1] = random.sample(list_1, 2)
-    a = a1 * base_gcd
-    b = b1 * base_gcd
-    correct_answer = base_gcd
+    gcd = random.randint(MIN_VALUE_GCD, MAX_VALUE_GCD)
+    [quotient_a, quotient_b] = random.sample(LIST_QUOTIENT, 2)
+    a = quotient_a * gcd
+    b = quotient_b * gcd
+    correct_answer = gcd
     question = f'{a} {b}'
 
     return question, correct_answer
