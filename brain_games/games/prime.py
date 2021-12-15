@@ -1,6 +1,7 @@
 # scripts/brain_prime.py > prime.py
 
 import random
+
 REGULATIONS = (
     'Answer "yes" if given number is prime. Otherwise answer "no".'
 )
@@ -17,7 +18,9 @@ def is_prime(a):
 
 
 def current_game():
-    a = random.randint(17, 99)
+    MIN_VALUE, MAX_VALUE = 17, 99
+
+    a = random.randint(MIN_VALUE, MAX_VALUE)
     if is_prime(a):
         correct_answer = 'yes'
     else:
