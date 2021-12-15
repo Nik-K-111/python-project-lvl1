@@ -7,7 +7,6 @@ ROUNDS = 3
 
 
 def current_game():
-
     A_MIN_VALUE, A_MAX_VALUE = 3, 99
     B_MIN_VALUE, B_MAX_VALUE = 3, 99
 
