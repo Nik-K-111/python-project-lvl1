@@ -2,11 +2,10 @@
 
 import random
 
-REGULATIONS = 'What is the result of the expression?'
-ROUNDS = 3
-
 
 def current_game():
+    DESCRIPTION = 'What is the result of the expression?'
+
     A_MIN_VALUE, A_MAX_VALUE = 3, 99
     B_MIN_VALUE, B_MAX_VALUE = 3, 99
 
@@ -23,4 +22,4 @@ def current_game():
 
     question = f'{a} {sign} {b}'
 
-    return question, correct_answer
+    return DESCRIPTION, question, correct_answer

@@ -2,11 +2,10 @@
 
 import random
 
-REGULATIONS = 'What number is missing in the progression?'
-ROUNDS = 3
-
 
 def current_game():
+    DESCRIPTION = 'What number is missing in the progression?'
+
     NUMBER_OF_MEMBERS = 10
     MIN_DIFFERENCE, MAX_DIFFERENCE = 3, 9
     MIN_X_TERM, MAX_X_TERM = 1, 10
@@ -28,4 +27,4 @@ def current_game():
 
     question = (f'{progression_string}')
 
-    return question, correct_answer
+    return DESCRIPTION, question, correct_answer

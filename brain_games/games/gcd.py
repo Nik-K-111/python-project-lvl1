@@ -3,11 +3,10 @@
 
 import random
 
-REGULATIONS = 'Find the greatest common divisor of given numbers.'
-ROUNDS = 3
-
 
 def current_game():
+    DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+
     MIN_VALUE_GCD, MAX_VALUE_GCD = 2, 15
     LIST_QUOTIENT = [2, 3, 5, 7, 11, 13, 17, 19]
 
@@ -18,4 +17,4 @@ def current_game():
     correct_answer = gcd
     question = f'{a} {b}'
 
-    return question, correct_answer
+    return DESCRIPTION, question, correct_answer

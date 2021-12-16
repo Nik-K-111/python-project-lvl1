@@ -2,17 +2,13 @@
 
 import random
 
-REGULATIONS = 'Answer "yes" if the number is even, otherwise answer "no"'
-ROUNDS = 3
-
 
 def is_even(number):
-    if number & 1 == 1:
-        return False
-    return True
+    return number % 2 == 0
 
 
 def current_game():
+    DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no"'
 
     MIN_VALUE, MAX_VALUE = 11, 99
 
@@ -23,4 +19,4 @@ def current_game():
     else:
         correct_answer = 'no'
 
-    return question, correct_answer
+    return DESCRIPTION, question, correct_answer

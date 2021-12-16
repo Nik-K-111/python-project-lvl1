@@ -2,14 +2,9 @@
 
 import random
 
-REGULATIONS = (
-    'Answer "yes" if given number is prime. Otherwise answer "no".'
-)
-ROUNDS = 3
-
 
 def is_prime(a):
-    if a & 1 == 0:
+    if a % 2 == 0:
         return False
     d = 3
     while d ** 2 <= a and a % d != 0:
@@ -18,13 +13,17 @@ def is_prime(a):
 
 
 def current_game():
+    DESCRIPTION = (
+        'Answer "yes" if given number is prime. Otherwise answer "no".'
+    )
+
     MIN_VALUE, MAX_VALUE = 17, 99
 
-    a = random.randint(MIN_VALUE, MAX_VALUE)
-    if is_prime(a):
+    num = random.randint(MIN_VALUE, MAX_VALUE)
+    if is_prime(num):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    question = a
+    question = num
 
-    return question, correct_answer
+    return DESCRIPTION, question, correct_answer

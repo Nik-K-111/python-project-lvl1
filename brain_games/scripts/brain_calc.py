@@ -1,11 +1,11 @@
 #! usr/bin/env python3
 
 from brain_games.engine import run_game
-from brain_games.games.calc import REGULATIONS, ROUNDS, current_game
+from brain_games.games.calc import current_game
 
 
 def brain_calc():
-    run_game(REGULATIONS, ROUNDS, current_game)
+    run_game(current_game)
 
 
 def main():
