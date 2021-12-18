@@ -6,6 +6,7 @@ DESCRIPTION = (
         'Answer "yes" if given number is prime. Otherwise answer "no".'
 )
 
+
 def is_prime(a):
     d = a ** 0.5 + 1
     i = 2
