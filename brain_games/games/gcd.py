@@ -3,18 +3,23 @@
 
 import random
 
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+
+
+def which_gcd(a, b):
+    a, b = max(a, b), min(a, b)
+
+    while b != 0:
+        a, b = b, a % b
+
+    return a
+
 
 def current_game():
-    DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+    num_a = random.randint(20, 99)
+    num_b = random.randint(20, 99)
 
-    MIN_VALUE_GCD, MAX_VALUE_GCD = 2, 15
-    LIST_QUOTIENT = [2, 3, 5, 7, 11, 13, 17, 19]
+    correct_answer = which_gcd(num_a, num_b)
+    question = f'{num_a} {num_b}'
 
-    gcd = random.randint(MIN_VALUE_GCD, MAX_VALUE_GCD)
-    [quotient_a, quotient_b] = random.sample(LIST_QUOTIENT, 2)
-    a = quotient_a * gcd
-    b = quotient_b * gcd
-    correct_answer = gcd
-    question = f'{a} {b}'
-
-    return DESCRIPTION, question, correct_answer
+    return question, correct_answer

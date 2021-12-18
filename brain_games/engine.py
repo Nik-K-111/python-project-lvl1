@@ -3,9 +3,10 @@
 import prompt
 
 
-def run_game(current_game):
-    DESCRIPTION, *z = current_game()
+def run_game(DESCRIPTION, current_game):
+    # description = DESCRIPTION
     ROUNDS = 3
+
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
 
@@ -15,7 +16,7 @@ def run_game(current_game):
     )
 
     for i in range(ROUNDS):
-        *z, question, correct_answer = current_game()
+        question, correct_answer = current_game()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
 

@@ -2,29 +2,30 @@
 
 import random
 
+DESCRIPTION = 'What number is missing in the progression?'
+
+
+def a_progression(first_term, num_term, difference):
+    progression = [first_term, ]
+    for i in range(1, num_term):
+        progression = progression + [first_term + difference * i]
+    return progression
+
 
 def current_game():
-    DESCRIPTION = 'What number is missing in the progression?'
+    first_term = random.randint(3, 9)
+    num_term = 10
+    difference = random.randint(3, 15)
+    num_x_term = random.randint(0, num_term - 1)
 
-    NUMBER_OF_MEMBERS = 10
-    MIN_DIFFERENCE, MAX_DIFFERENCE = 3, 9
-    MIN_X_TERM, MAX_X_TERM = 1, 10
-    LIST_FIRST_TERM = [2, 3, 4, 6, 7, 8, 9, 12, 13, 14, 16, 17, 18, 19]
-    progression_string = ''
+    progression = a_progression(first_term, num_term, difference)
+    correct_answer = progression[num_x_term]
 
-    [term] = random.sample(LIST_FIRST_TERM, 1)
-    difference = random.randint(MIN_DIFFERENCE, MAX_DIFFERENCE)
-    num_x_term = random.randint(MIN_X_TERM, MAX_X_TERM)
-    j = NUMBER_OF_MEMBERS
-    while j > 0:
-        if j != num_x_term:
-            progression_string = progression_string + str(term) + ' '
+    question = ''
+    for i in range(num_term):
+        if i != num_x_term:
+            question = question + str(progression[i]) + ' '
         else:
-            correct_answer = term
-            progression_string = progression_string + '.. '
-        term = term + difference
-        j -= 1
+            question = question + '.. '
 
-    question = (f'{progression_string}')
-
-    return DESCRIPTION, question, correct_answer
+    return question, correct_answer
