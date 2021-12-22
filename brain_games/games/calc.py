@@ -6,13 +6,14 @@ DESCRIPTION = 'What is the result of the expression?'
 
 
 def calc(a, b, operator):
+    global result
+
     if operator == '+':
         result = a + b
     elif operator == '-':
         result = a - b
     elif operator == '*':
         result = a * b
-    return result
 
 
 def generate_round():
@@ -22,6 +23,6 @@ def generate_round():
     operator = random.choice(list_operators)
     question = f'{num_a} {operator} {num_b}'
 
-    correct_answer = calc(num_a, num_b, operator)
+    correct_answer = result
 
     return DESCRIPTION, question, correct_answer
