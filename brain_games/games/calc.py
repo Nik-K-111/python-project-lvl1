@@ -23,6 +23,7 @@ def generate_round():
     operator = random.choice(list_operators)
     question = f'{num_a} {operator} {num_b}'
 
+    calc(num_a, num_b, operator)
     correct_answer = result
 
     return DESCRIPTION, question, correct_answer
