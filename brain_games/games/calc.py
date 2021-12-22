@@ -14,6 +14,7 @@ def calc(a, b, operator):
         result = a * b
     return result
 
+
 def generate_round():
     list_operators = ['+', '-', '*']
     num_a = random.randint(3, 99)
