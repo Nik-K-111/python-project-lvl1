@@ -1,15 +1,11 @@
 #! usr/bin/env python3
 
 from brain_games.engine import run_game
-from brain_games.games.prime import DESCRIPTION, current_game
-
-
-def brain_prime():
-    run_game(DESCRIPTION, current_game)
+from brain_games.games.prime import generate_round
 
 
 def main():
-    brain_prime()
+    run_game(generate_round)
 
 
 if __name__ == '__main__':

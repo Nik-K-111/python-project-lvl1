@@ -15,11 +15,11 @@ def is_prime(a):
     return i ** 2 > a
 
 
-def current_game():
+def generate_round():
     question = random.randint(17, 99)
     if is_prime(question):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
 
-    return question, correct_answer
+    return DESCRIPTION, question, correct_answer

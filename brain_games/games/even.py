@@ -1,6 +1,7 @@
 #  even.py for scripts/brain_even.py
 
 import random
+
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no"'
 
 
@@ -8,7 +9,7 @@ def is_even(number):
     return number % 2 == 0
 
 
-def current_game():
+def generate_round():
     question = random.randint(11, 99)
 
     if is_even(question):
@@ -16,4 +17,4 @@ def current_game():
     else:
         correct_answer = 'no'
 
-    return question, correct_answer
+    return DESCRIPTION, question, correct_answer

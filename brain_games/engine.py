@@ -2,32 +2,32 @@
 
 import prompt
 
+ROUNDS = 3
 
-def run_game(DESCRIPTION, current_game):
-    # description = DESCRIPTION
-    ROUNDS = 3
+
+def run_game(generate_round):
+    description, *z = generate_round()
 
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
 
     print(
         f'Hello, {name}!\n'
-        f'{DESCRIPTION}'
+        f'{description}'
     )
 
     for i in range(ROUNDS):
-        question, correct_answer = current_game()
+        *z, question, correct_answer = generate_round()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
 
         if str(user_answer) == str(correct_answer):
             print('Correct!')
-            final = (f"Congratulations, {name}!")
         else:
-            final = (
+            print(
                 f"'{user_answer}' is wrong answer ;(. "
                 f"Correct answer was '{correct_answer}'.\n"
                 f"Let's try again, {name}!"
             )
-            break
-    print(final)
+            return
+    print(f"Congratulations, {name}!")
