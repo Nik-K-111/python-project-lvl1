@@ -24,6 +24,5 @@ def generate_round():
     question = f'{num_a} {operator} {num_b}'
 
     calc(num_a, num_b, operator)
-    correct_answer = result
 
-    return DESCRIPTION, question, correct_answer
+    return DESCRIPTION, question, result
