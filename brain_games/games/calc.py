@@ -14,7 +14,8 @@ def calc(a, b, operator):
         result = a - b
     elif operator == '*':
         result = a * b
-    else: None
+    else:
+        None
 
 
 def generate_round():
