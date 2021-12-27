@@ -5,8 +5,8 @@ import prompt
 ROUNDS = 3
 
 
-def run_game(generate_round):
-    description, *z = generate_round()
+def run_game(game):
+    description = game.DESCRIPTION
 
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -17,7 +17,7 @@ def run_game(generate_round):
     )
 
     for i in range(ROUNDS):
-        *z, question, correct_answer = generate_round()
+        question, correct_answer = game.generate_round()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
 

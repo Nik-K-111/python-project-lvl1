@@ -25,4 +25,4 @@ def generate_round():
 
     calc(num_a, num_b, operator)
 
-    return DESCRIPTION, question, result
+    return question, result

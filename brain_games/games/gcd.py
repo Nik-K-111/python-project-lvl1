@@ -6,11 +6,8 @@ DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd(a, b):
-    a, b = max(a, b), min(a, b)
-
     while b != 0:
         a, b = b, a % b
-
     return a
 
 
@@ -20,4 +17,4 @@ def generate_round():
     question = f'{num_a} {num_b}'
     correct_answer = gcd(num_a, num_b)
 
-    return DESCRIPTION, question, correct_answer
+    return question, correct_answer

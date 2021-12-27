@@ -17,4 +17,4 @@ def generate_round():
     else:
         correct_answer = 'no'
 
-    return DESCRIPTION, question, correct_answer
+    return question, correct_answer
