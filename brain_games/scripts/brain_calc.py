@@ -1,8 +1,7 @@
 #! usr/bin/env python3
 
 from brain_games.engine import run_game
-from brain_games.games import calc
-game = calc
+from brain_games.games import calc as game
 
 
 def main():
