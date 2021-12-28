@@ -1,5 +1,3 @@
-# progression.py for scripts/brain_progression.py
-
 import random
 
 DESCRIPTION = 'What number is missing in the progression?'

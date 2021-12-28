@@ -1,5 +1,3 @@
-# scripts/brain_prime.py > prime.py
-
 import random
 
 DESCRIPTION = (

@@ -1,5 +1,3 @@
-# gcd.py for scripts/brain_gcd.py
-
 import random
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'

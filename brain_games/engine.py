@@ -1,5 +1,3 @@
-# engine.py - Движок игры
-
 import prompt
 
 ROUNDS = 3

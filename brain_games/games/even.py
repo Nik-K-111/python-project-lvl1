@@ -1,5 +1,3 @@
-#  even.py for scripts/brain_even.py
-
 import random
 
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no"'
